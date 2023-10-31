@@ -1,4 +1,6 @@
-. .\helper\Variables.ps1
+Invoke-WebRequest "https://raw.githubusercontent.com/ZZELAV/WinAppInstaller/main/helper/Variables.ps1" | Invoke-Expression
+# FOR LOCAL TESTING
+#. .\helper\Variables.ps1
 
 Add-Type -AssemblyName System.Windows.Forms
 
