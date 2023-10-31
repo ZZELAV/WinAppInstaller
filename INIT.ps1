@@ -13,8 +13,11 @@ if (-not (Test-Path -Path $targetFolder -PathType Container)) {
 $dataFiles = Get-ChildItem -Path $targetFolder -Filter "DATA_*.json"
 
 if ($dataFiles.Count -eq 0) {
-    Copy-Item .\DATA.json $env:TEMP\WinAppInstaller\DATA_$(Get-Date -Format "yyyyMMdd_HHmmss").json
-    Write-Host "Data file copied to Temp-Directory"
+    Write-Host "Retrieving data..."
+    git clone $githubRepoUrl $root
+    Write-Host "Data copied to Temp-Directory"
+    #Copy-Item .\DATA.json $env:TEMP\WinAppInstaller\DATA_$(Get-Date -Format "yyyyMMdd_HHmmss").json
+    #Write-Host "Data file copied to Temp-Directory"
 }
 
 . .\main\Form.ps1

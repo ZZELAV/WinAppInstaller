@@ -12,4 +12,7 @@ Write-Host "====================================================================
 Write-Host "  $projectName - $copyright - $version                                              "
 Write-Host "===================================================================================="
 
-. "$psScriptRoot/INIT.ps1"
+Invoke-WebRequest "https://raw.githubusercontent.com/ZZELAV/WinAppInstaller/main/INIT.ps1" | Invoke-Expression
+
+# FOR LOCAL TESTING
+#. .\INIT.ps1
