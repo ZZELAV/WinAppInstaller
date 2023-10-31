@@ -1,0 +1,18 @@
+{
+  "Version": "0.0",
+  "Download": [
+    {
+      "Name": "Brave",
+      "Website": "https://brave.com",
+      "Web": "https://laptop-updates.brave.com/latest/winx64"
+    },
+    {
+      "Name": "Visual Studio Code"
+    },
+    {
+      "Name": "Discord",
+      "Website": "https://discord.com",
+      "Web": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
+    }
+  ]
+}
