@@ -1,3 +1,5 @@
+$psScriptRoot = "https://raw.githubusercontent.com/ZZELAV/WinAppInstaller/main"
+
 $DATA = Get-Content .\DATA.json | ConvertFrom-Json
 $DATA_DOWNLOAD = $DATA.Download | Sort-Object Name
 
